@@ -1,11 +1,11 @@
 var app = require('./config/server');
 
 app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/app/views/home/index.html');
 });
 
 app.get('/css/style.css', function(req, res){
-  res.sendFile(__dirname + '/css/style.css');
+  res.sendFile(__dirname + '/app/views/css/style.css');
 });
 
 app.listen(3000, function(){
