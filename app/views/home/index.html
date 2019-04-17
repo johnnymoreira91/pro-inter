@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+    <SCRIPT LANGUAGE="JavaScript">
+                
+        function Login(){
+        var done=0;
+        var username=document.login.username.value;
+        username=username.toLowerCase();
+        var password=document.login.password.value;
+        password=password.toLowerCase();
+        if (username=="admin" && password=="1") { window.location="index"; done=1; }
+        if (done==0) { alert("Senha ou Usuario invalido."); }
+        }
+       
+    </SCRIPT>
 </head>
 
 <body>
     <div class="login">
         <h1>LOGIN</h1>
-        <input type="text" class="inputLogin" placeholder="Username">
-        <input type="password" class="inputLogin" placeholder="Password">
-        <input type="submit" class="btnLogin" value="Login">
+        <input type="text" name="username" class="inputLogin" placeholder="Username">
+        <input type="password" name="password" class="inputLogin" placeholder="Password">
+        <input type="submit" class="btnLogin" onclick="Login()" value="Login">
     </div>
 </body>
 </html>
