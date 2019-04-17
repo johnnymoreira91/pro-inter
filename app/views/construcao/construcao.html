@@ -1,30 +1,40 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
-
+<!DOCTYPE HTML>
+<html lang="pt-br">
 <head>
-	<link rel="stylesheet" href="../css/menuprincipal.css">
-	<title>Secretaria - "DOCTOR 1.0"</title>
-	
+  <meta charset="UTF-8">
+    <title>Doctor x</title>
+     <!-- Aqui chamamos o nosso arquivo css externo -->
+    <link rel="stylesheet" type="text/css"  href="/css/menuprincipal.css" />
+    <!--[if lte IE 8]>
+ <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->   
 </head>
-
 <body>
-
-        <nav id="menu">
+<nav>
+  <ul class="menu">
+        <li><a href="/menuprincipal">Home</a></li>
+        <li><a href="">Agenda</a>
+          <ul>
+            <li><a href="/addagenda">Adicionar</a></li>
+            <li><a href="/construcao">Consultar</a></li>
+            <li><a href="#">Excluir</a></li>                    
+      </ul>
+        </li>
+            <li><a href="#">Paciente</a>
                 <ul>
-                    <li><a href="../menuPrincipal/">Home</a></li>
-                    <li><a href="../construcao/">Agenda</a></li>
-                    <li><a href="../construcao/">Paciente</a></li>
-                    <li><a href="../construcao/">Contato</a></li>
-                    <li><a href="../construcao/">Logoff</a></li>
+                      <li><a href="#">Adicionar</a></li>
+                      <li><a href="#">Consultar</a></li>
+                      <li><a href="#">Excluir</a></li>                    
                 </ul>
-            </nav>
+            </li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Logoff</a></li>                
+</ul>
+</nav>
+<br>
+  <div id="addAgenda">
+    PAGINA CONSTRUCAO
+  </div>
 
-	<div id="addAgenda">
-        <div align="center">
-            <h1> Pagina em construção</h1>
-        </div>
-	</div>
-
-<body>
-
+</body>
 </html>

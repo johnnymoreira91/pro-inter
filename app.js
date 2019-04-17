@@ -4,8 +4,24 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/app/views/home/index.html');
 });
 
+app.get('/menuprincipal', function(req, res){
+  res.sendFile(__dirname + '/app/views/menuprincipal/menuprincipal.html');
+});
+
+app.get('/construcao', function(req, res){
+  res.sendFile(__dirname + '/app/views/construcao/construcao.html');
+});
+
+app.get('/addagenda', function(req, res){
+  res.sendFile(__dirname + '/app/views/agenda/addagenda.html');
+});
+
 app.get('/css/style.css', function(req, res){
   res.sendFile(__dirname + '/app/views/css/style.css');
+});
+
+app.get('/css/menuprincipal.css', function(req, res){
+  res.sendFile(__dirname + '/app/views/css/menuprincipal.css');
 });
 
 app.listen(3000, function(){

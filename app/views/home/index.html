@@ -6,27 +6,33 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 
-    <SCRIPT LANGUAGE="JavaScript">
-                
-        function Login(){
-        var done=0;
-        var username=document.login.username.value;
-        username=username.toLowerCase();
-        var password=document.login.password.value;
-        password=password.toLowerCase();
-        if (username=="admin" && password=="1") { window.location="index"; done=1; }
-        if (done==0) { alert("Senha ou Usuario invalido."); }
-        }
-       
-    </SCRIPT>
 </head>
 
 <body>
     <div class="login">
         <h1>LOGIN</h1>
-        <input type="text" name="username" class="inputLogin" placeholder="Username">
-        <input type="password" name="password" class="inputLogin" placeholder="Password">
-        <input type="submit" class="btnLogin" onclick="Login()" value="Login">
+        <input type="text" id="username" name="username" class="inputLogin" placeholder="Username">
+        <input type="password" id="password" name="password" class="inputLogin" placeholder="Password">
+        <input type="button" class="btnLogin" id="btnLgr" value="Login">
     </div>
+
+    <script>
+    
+    var _user = document.getElementById('username');
+    var _password = document.getElementById('password');
+    var _btn = document.getElementById('btnLgr');
+
+    _btn.addEventListener('click', function(){
+
+        if(_user.value == 'admin' && _password.value == '1'){
+            alert ("Usuario LOGADO");
+            window.location = '/menuprincipal';
+        } else{
+            alert ("Erro Usuario / Senha");
+        }
+
+    })
+
+    </script>
 </body>
 </html>

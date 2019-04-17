@@ -1,20 +1,47 @@
-body {
-    background-color:dimgray;
-    font-family: 'Josefin Sans', sans-serif;
-    color: #FE0C5D;
+*{margin: 0; padding: 0;}
+ 
+body{
+font-family: arial, helvetica, sans-serif;
+font-size: 20px;
+}
+ 
+.menu{
+list-style:none; 
+border:1px solid #c0c0c0; 
+float:left; 
 }
 
-left {
-	font-family: arial, helvetica, sans-serif;
-	color: red;
-	
+.menu li{
+position:relative; 
+float:left; 
+border-right:1px solid #c0c0c0; 
 }
 
-#center {
-	font-family: Trattatello, helvetica, sans-serif;
-	color: white;
+.menu li a{color:#333; text-decoration:none; padding:5px 25px; display:block;}
+ 
+.menu li a:hover{
+background:#333; 
+color:#fff; 
+-moz-box-shadow:0 3px 10px 0 #CCC; 
+-webkit-box-shadow:0 3px 10px 0 #ccc; 
+text-shadow:0px 0px 5px #fff; 
 }
 
+.menu li  ul{
+position:absolute; 
+top:35px; 
+left:0;
+background-color:#fff; 
+display:none;
+}
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+border:1px solid #c0c0c0; 
+display:block; 
+width:180px;
+}
 
 #addAgenda{
 	display:flex;
@@ -26,31 +53,6 @@ left {
 	height:500px;
 	width:500px;
 	margin-top:50px;
-	margin-left:400px;
-}
-
-#menu ul {
-    padding:0px;
-    margin:0px;
-    background-color:#EDEDED;
-    list-style:none;
-}
-
-#menu ul li { display: inline; }
-
-#menu ul li a {
-    padding: 2px 10px;
-    display: inline-block;
-
-    /* visual do link */
-    background-color:#EDEDED;
-    color: #333;
-    text-decoration: none;
-    border-bottom:3px solid gold;
-}
-
-#menu ul li a:hover {
-    background-color: mediumaquamarine;
-    color: #6D6D6D;
-    border-bottom:3px solid #EA0000;
+    margin-left:400px;
+    border: solid #333;
 }
