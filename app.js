@@ -16,8 +16,16 @@ app.get('/addagenda', function(req, res){
   res.sendFile(__dirname + '/app/views/agenda/addagenda.html');
 });
 
+app.get('/consultaagenda', function(req, res){
+  res.sendFile(__dirname + '/app/views/agenda/consultaAgenda.html');
+});
+
 app.get('/paciente', function(req, res){
   res.sendFile(__dirname + '/app/views/paciente/cadastroPaciente.html');
+});
+
+app.get('/about', function(req, res){
+  res.sendFile(__dirname + '/app/views/about/about.html');
 });
 
 app.get('/css/style.css', function(req, res){
