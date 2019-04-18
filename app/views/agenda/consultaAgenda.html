@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor x - Consulta Agenda</title>
+  <!-- Aqui chamamos o nosso arquivo css externo -->
+  <link rel="stylesheet" type="text/css" href="../css/style1.css" />
+  <!--[if lte IE 8]>
+ <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+</head>
+
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="/menuprincipal">Home</a></li>
+      <li><a href="">Agenda</a>
+        <ul>
+            <li><a href="/addagenda">Adicionar</a></li>
+            <li><a href="/consultaagenda">Consultar</a></li>
+            <li><a href="/excluiragenda">Excluir</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Paciente</a>
+          <ul>
+            <li><a href="/paciente">Adicionar</a></li>
+            <li><a href="/consultarpaciente">Consultar</a></li>
+            <li><a href="/excluirpaciente">Excluir</a></li>
+          </ul>
+      </li>
+      <li><a href="/about">Sobre</a></li>
+      <li><a href="/">Logoff</a></li>
+    </ul>
+  </nav>
+  <br>
+  <div id="container-principal">
+    <div id="titulo">
+      <h1>CONSULTAR AGENDA</h1>
+    </div>
+    <div class="formulario" align="center">
+      <form id="consultAgend">
+        <div class="row">
+          <label for="nomePaciente">
+            <input type="text" class="inputs" id="nomePaciente" placeholder="Nome do Paciente">
+          </label>
+        </div>
+        <div class="row">
+          
+        </div>
+        <div class="row">
+            <br>
+        </div>
+        <div class="row">
+          <label for="adicionar">
+            <input type="submit" class="btnSubmit" name="agendar" value="Agendar">
+          </label>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
