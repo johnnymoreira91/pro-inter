@@ -6,6 +6,8 @@
 body {
 	font-family: arial, helvetica, sans-serif;
 	font-size: 20px;
+	background-image: url("../imagens/doc.jpg");
+
 }
 
 .menu {

@@ -16,12 +16,24 @@ app.get('/addagenda', function(req, res){
   res.sendFile(__dirname + '/app/views/agenda/addagenda.html');
 });
 
+app.get('/paciente', function(req, res){
+  res.sendFile(__dirname + '/app/views/paciente/cadastroPaciente.html');
+});
+
 app.get('/css/style.css', function(req, res){
   res.sendFile(__dirname + '/app/views/css/style.css');
 });
 
+app.get('/css/style1.css', function(req, res){
+  res.sendFile(__dirname + '/app/views/css/style1.css');
+});
+
 app.get('/css/menuprincipal.css', function(req, res){
   res.sendFile(__dirname + '/app/views/css/menuprincipal.css');
+});
+
+app.get('/imagens/doc.jpg', function(req, res){
+  res.sendFile(__dirname + '/app/views/imagens/doc.jpg');
 });
 
 app.listen(3000, function(){
