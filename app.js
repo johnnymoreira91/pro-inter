@@ -20,8 +20,8 @@ app.get('/consultaagendasecretaria', function(req, res){
   res.sendFile(__dirname + '/app/views/secretaria/agenda/consultaAgenda.html');
 });
 
-app.get('/addpacientesecretaria', function(req, res){
-  res.sendFile(__dirname + '/app/views/secretaria/paciente/cadastroPaciente.html');
+app.get('/addpacientesecretaria', function(req,res){
+  res.sendFile(__dirname + '../views/secretaria/paciente/cadastroPaciente.html');
 });
 
 app.get('/abouts', function(req, res){
