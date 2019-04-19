@@ -1,5 +1,5 @@
 module.exports = function(app){
   app.get('/', function(req, res){
-    res.sendFile('./app/views/home/index.html');
+    res.render('./app/views/home/index.html');
   });
 }

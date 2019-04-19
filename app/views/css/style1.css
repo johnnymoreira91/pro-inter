@@ -56,6 +56,23 @@ body {
 	width: 180px;
 }
 
+#construcao {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background-color: white;
+	border-radius: 25px;
+	position: absolute;
+	height: 500px;
+	width: 600px;
+	margin-top: 50px;
+	margin-left: 350px;
+	border: solid #333;
+	align-content: center;
+	align-items: center;
+	background-image: url("../imagens/construcao.jpg");
+}
+
 #container-principal {
 	display: flex;
 	flex-direction: column;

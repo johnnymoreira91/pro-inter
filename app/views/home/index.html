@@ -24,10 +24,13 @@
 
     _btn.addEventListener('click', function(){
 
-        if(_user.value == 'admin' && _password.value == '1'){
-            alert ("Usuario LOGADO");
-            window.location = '/menuprincipal';
-        } else{
+        if(_user.value == 'secretaria' && _password.value == '1'){
+            alert ("Logado Secretaria");
+            window.location = '/menuprincipalsecretaria';
+        } else if(_user.value == 'fisio' && _password.value == '1'){
+            alert ("Logado Fisio");
+            window.location = '/menuprincipalfisio';
+        } else {
             alert ("Erro Usuario / Senha");
         }
 
