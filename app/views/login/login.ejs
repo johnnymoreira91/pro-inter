@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="login">
+        <h1>LOGIN</h1>
+        <input type="text" id="username" name="username" class="inputLogin" placeholder="Username">
+        <input type="password" id="password" name="password" class="inputLogin" placeholder="Password">
+        <input type="button" class="btnLogin" id="btnLgr" value="Login">
+    </div>
+
+    <script>
+    
+    var _user = document.getElementById('username');
+    var _password = document.getElementById('password');
+    var _btn = document.getElementById('btnLgr');
+
+    _btn.addEventListener('click', function(){
+
+        if(_user.value == 'secretaria' && _password.value == '1'){
+            alert ("Logado Secretaria");
+            window.location = '/menuprincipalsecretaria';
+        } else if(_user.value == 'fisio' && _password.value == '1'){
+            alert ("Logado Fisio");
+            window.location = '/menuprincipalfisio';
+        } else {
+            alert ("Erro Usuario / Senha");
+        }
+
+    })
+
+    </script>
+</body>
+</html>

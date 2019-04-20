@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 20px;
+	background-image: url("../imagens/doc.jpg");
+
+}
+
+.menu {
+	list-style: none;
+	border: 1px solid #c0c0c0;
+	float: left;
+}
+
+.menu li {
+	position: relative;
+	float: left;
+	border-right: 1px solid #c0c0c0;
+}
+
+.menu li a {
+	color: #333;
+	text-decoration: none;
+	padding: 5px 25px;
+	display: block;
+}
+
+.menu li a:hover {
+	background: #333;
+	color: #fff;
+	-moz-box-shadow: 0 3px 10px 0 #CCC;
+	-webkit-box-shadow: 0 3px 10px 0 #ccc;
+	text-shadow: 0px 0px 5px #fff;
+}
+
+.menu li ul {
+	position: absolute;
+	top: 35px;
+	left: 0;
+	background-color: #fff;
+	display: none;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+	display: block;
+}
+
+.menu li ul li {
+	border: 1px solid #c0c0c0;
+	display: block;
+	width: 180px;
+}
+
+#construcao {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background-color: white;
+	border-radius: 25px;
+	position: absolute;
+	height: 500px;
+	width: 600px;
+	margin-top: 50px;
+	margin-left: 350px;
+	border: solid #333;
+	align-content: center;
+	align-items: center;
+	background-image: url("../imagens/construcao.jpg");
+}
+
+#container-principal {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background-color: white;
+	border-radius: 25px;
+	position: absolute;
+	height: 500px;
+	width: 500px;
+	margin-top: 50px;
+	margin-left: 400px;
+	border: solid #333;
+	align-content: center;
+	align-items: center;
+}
+
+.formulario {
+	padding: 5px;
+	width: 100%;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+#formAdd {
+	height: 300px;
+	width: inherit;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.inputs {
+	border-radius: 10px;
+	border: rgb(0, 0, 0) solid 1px;
+	padding: 10px;
+	margin: 10px;
+}
+
+#exercicios {
+	height: 170px;
+	width: 300px;
+}
+
+.width-larga {
+	width: 400px;
+}
+
+#horario {
+	width: 70px;
+}
+
+#data {
+	width: 130px;
+}
+
+.btnSubmit {
+	padding: 10px;
+	width: 100px;
+}
+
+#sexo {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.numeros {
+	width: 100px;
+}
