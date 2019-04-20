@@ -1,16 +1,17 @@
 {
-  "name": "pro-inter",
+  "name": "txt",
   "version": "1.0.0",
-  "description": "Trabalho Pro inter Faculdade",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Johnny / Andre",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "consign": "^0.1.6",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "mysql": "^2.17.1"
+    "nodemon": "^1.18.11"
   }
 }
