@@ -89,6 +89,22 @@ body {
 	align-items: center;
 }
 
+#container-veragenda {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background-color: white;
+	border-radius: 25px;
+	position: absolute;
+	height: 500px;
+	width: 650px;
+	margin-top: 50px;
+	margin-left: 400px;
+	border: solid #333;
+	align-content: center;
+	align-items: center;
+}
+
 .formulario {
 	padding: 5px;
 	width: 100%;

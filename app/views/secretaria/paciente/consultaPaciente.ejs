@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Doctor x - Consulta Agenda</title>
+  <title>Doctor x - Consulta Paciente</title>
   <!-- Aqui chamamos o nosso arquivo css externo -->
   <link rel="stylesheet" type="text/css"  href="../../../assets/css/style1.css" />
   <!--[if lte IE 8]>
@@ -36,7 +36,7 @@
   <br>
   <div id="container-veragenda">
     <div id="titulo">
-      <h1>CONSULTAR AGENDA</h1>
+      <h1>CONSULTAR PACIENTE</h1>
     </div>
     <div class="formulario" align="center">
       <form id="consultAgend">
@@ -59,20 +59,28 @@
           <font size="2" face="Courier New" >
           <table border="1" > 
             <tr>
-             
+              <td>ID</td>
               <td>Nome</td>
-              <td>Horario</td>
-              <td>Dia</td>
-              <td>exercicio</td>
+              <td>Nascimento</td>
+              <td>Telefone</td>
+              <td>Endereço</td>
+              <td>Cep</td>
+              <td>Cpf</td>
+              <td>Usuario</td>
+              <td>Senha</td>
             </tr>
             
             <% for(var i = 0; i < consultaAgenda.length ; i++ ) { %>
             <tr >
-              
+              <td><%= consultaAgenda[i].id_paciente %></td>
               <td><%= consultaAgenda[i].nome %></td>
-              <td><%= consultaAgenda[i].horario %></td>
-              <td><%= consultaAgenda[i].dia %></td>
-              <td><%= consultaAgenda[i].exercicio %></td>
+              <td><%= consultaAgenda[i].data_nascimento %></td>
+              <td><%= consultaAgenda[i].telefone %></td>
+              <td><%= consultaAgenda[i].endereco %></td>
+              <td><%= consultaAgenda[i].cep %></td>
+              <td><%= consultaAgenda[i].cpf %></td>
+              <td><%= consultaAgenda[i].usuario %></td>
+              <td><%= consultaAgenda[i].senha %></td>
             </tr>
             <% } %>
           </table>
