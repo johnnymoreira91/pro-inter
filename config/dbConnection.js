@@ -1,5 +1,7 @@
 var mysql = require('mysql');
 
+
+
 module.exports = function(){
     console.log('INICIADO CONEXAO');
     /*var connection =*/ return mysql.createConnection({

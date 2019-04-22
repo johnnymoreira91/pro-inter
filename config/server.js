@@ -7,6 +7,9 @@ app.set('views', './app/views');
 app.use('/assets/', express.static('assets'));
 //app.set('routes', './app/routes');
 
-consign().include('./app/routes').into(app);
+consign()
+.include('./app/routes')
+.then('config/dbConnection.js')
+.into(app);
 
 module.exports = app;

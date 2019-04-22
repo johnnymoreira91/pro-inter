@@ -13,7 +13,8 @@ module.exports = function(app){
             database : 'prointer'
         });
     */
-        connection.query('select agenda.id_paciente, agenda.horario, agenda.dia, paciente.id_paciente, paciente.nome from agenda, paciente', function(error, result){
+        connection.query('select a.id_agenda, a.id_paciente, a.horario, a.dia, a.exercicio, p.nome from agenda a inner join paciente p on a.id_paciente = p.id_paciente', 
+        function(error, result){
             res.render('secretaria/agenda/consultaagenda', {consultaAgenda : result});
             //res.send(result);
         })
